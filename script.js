@@ -117,13 +117,36 @@ document.addEventListener('DOMContentLoaded', function() {
     }, observerOptions);
 
     // Animate elements on scroll
-    const animatedElements = document.querySelectorAll('.timeline-item, .experience-card, .project-card, .skill-item, .contact-item');
+    const animatedElements = document.querySelectorAll('.timeline-item, .journey-item, .experience-card, .project-card, .contact-item');
     
     animatedElements.forEach(el => {
         el.style.opacity = '0';
         el.style.transform = 'translateY(20px)';
         el.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
         observer.observe(el);
+    });
+
+    // Skill progress bars animation
+    const skillBars = document.querySelectorAll('.skill-bar');
+    const skillsObserver = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                const progressFill = entry.target.querySelector('.progress-fill');
+                const width = progressFill.getAttribute('data-width');
+                
+                // Animate the progress bar
+                setTimeout(() => {
+                    progressFill.style.width = width + '%';
+                }, entry.target.dataset.delay || 0);
+                
+                skillsObserver.unobserve(entry.target);
+            }
+        });
+    }, { threshold: 0.3 });
+    
+    skillBars.forEach((bar, index) => {
+        bar.dataset.delay = index * 200; // Stagger animation
+        skillsObserver.observe(bar);
     });
 
     // Staggered animation for skills
