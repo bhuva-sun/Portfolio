@@ -8,7 +8,7 @@ redirects = []
 
 [build]
 publish = "/Users/bhuvanmadhur/Downloads/portfolio"
-publishOrigin = "default"
+publishOrigin = "ui"
 
 [build.environment]
 
