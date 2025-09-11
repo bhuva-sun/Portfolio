@@ -235,7 +235,7 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
 
-    // Stats counter animation
+    // Stats counter animation for About section
     const stats = document.querySelectorAll('.stat h3');
     const statsObserver = new IntersectionObserver((entries) => {
         entries.forEach(entry => {
@@ -266,6 +266,38 @@ document.addEventListener('DOMContentLoaded', function() {
     
     stats.forEach(stat => {
         statsObserver.observe(stat);
+    });
+
+    // Stats Bar counter animation
+    const statNumbers = document.querySelectorAll('.stat-number');
+    const statsBarObserver = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                const statElement = entry.target;
+                const targetValue = parseInt(statElement.getAttribute('data-target'));
+                
+                let current = 0;
+                const increment = targetValue / 30; // Smooth animation over 30 steps
+                const duration = 2000; // 2 seconds
+                const stepTime = duration / 30;
+                
+                const counter = setInterval(() => {
+                    current += increment;
+                    if (current >= targetValue) {
+                        statElement.textContent = targetValue + '+';
+                        clearInterval(counter);
+                    } else {
+                        statElement.textContent = Math.floor(current);
+                    }
+                }, stepTime);
+                
+                statsBarObserver.unobserve(statElement);
+            }
+        });
+    }, { threshold: 0.3 });
+    
+    statNumbers.forEach(stat => {
+        statsBarObserver.observe(stat);
     });
 
     // Add hover effects to project cards
