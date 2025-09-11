@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bhuvan Chaudhary - Full Stack Developer</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h2>Bhuvan Chaudhary</h2>
+            </div>
+            <div class="nav-menu" id="nav-menu">
+                <a href="#home" class="nav-link">Home</a>
+                <a href="#about" class="nav-link">About</a>
+                <a href="#education" class="nav-link">Education</a>
+                <a href="#experience" class="nav-link">Experience</a>
+                <a href="#projects" class="nav-link">Projects</a>
+                <a href="#skills" class="nav-link">Skills</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </div>
+            <div class="nav-actions">
+                <button class="theme-toggle" id="theme-toggle" aria-label="Toggle theme">
+                    <i class="fas fa-sun" id="theme-icon"></i>
+                </button>
+                <div class="nav-toggle" id="nav-toggle">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1>Hi, I'm <span class="highlight">Bhuvan Chaudhary</span></h1>
+                <h2 class="hero-subtitle">Full Stack Developer & CS Student</h2>
+                <p class="hero-description">
+                    Passionate Computer Science student specializing in web development 
+                    with experience in React, JavaScript, Python, and modern web technologies.
+                </p>
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn btn-primary">View My Work</a>
+                    <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+                </div>
+                <div class="hero-social">
+                    <a href="https://linkedin.com/in/bhuvan-chaudhary-46081527b" target="_blank" class="social-link">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="mailto:bhuvanmadhur@gmail.com" class="social-link">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                    <a href="tel:+917060666604" class="social-link">
+                        <i class="fas fa-phone"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="hero-img-container">
+                    <div class="hero-shape"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">About Me</h2>
+                <p class="section-subtitle">Get to know more about who I am</p>
+            </div>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>
+                        I'm a dedicated Computer Science student at GLA University, Mathura, with a passion for 
+                        creating innovative web solutions. Currently pursuing my Bachelor of Technology with 
+                        hands-on experience in full-stack development.
+                    </p>
+                    <p>
+                        Through my internships at Cod soft Pvt. Ltd and Aglow Hospitality Services, I've gained 
+                        valuable experience in web development, client interaction, and project management. 
+                        I enjoy solving complex problems and turning ideas into reality through code.
+                    </p>
+                    <div class="about-stats">
+                        <div class="stat">
+                            <h3>2+</h3>
+                            <p>Internships</p>
+                        </div>
+                        <div class="stat">
+                            <h3>5+</h3>
+                            <p>Technologies</p>
+                        </div>
+                        <div class="stat">
+                            <h3>2+</h3>
+                            <p>Projects</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="education">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Education</h2>
+                <p class="section-subtitle">My academic journey</p>
+            </div>
+            <div class="education-timeline">
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">June 2026</div>
+                        <h3>Bachelor of Technology in Computer Science</h3>
+                        <h4>GLA University, Mathura</h4>
+                        <p>CGPA: 6.38</p>
+                        <p>Relevant Coursework: Data Structures, Algorithms, Web Development, Database Management, Software Engineering</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">May 2022</div>
+                        <h3>Intermediate</h3>
+                        <h4>Kanha Makhan Public School, Mathura</h4>
+                        <p>Percentage: 66%</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">May 2020</div>
+                        <h3>High School</h3>
+                        <h4>Gyan Deep Shiksha Bharti School, Agra</h4>
+                        <p>Percentage: 75%</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="experience">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Experience</h2>
+                <p class="section-subtitle">My professional journey</p>
+            </div>
+            <div class="experience-grid">
+                <div class="experience-card">
+                    <div class="card-header">
+                        <div class="company-logo">
+                            <i class="fas fa-code"></i>
+                        </div>
+                        <div class="experience-info">
+                            <h3>Website Developer Intern</h3>
+                            <h4>Cod soft Pvt. Ltd, Noida</h4>
+                            <p class="experience-date">June 2024 - July 2024</p>
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <ul>
+                            <li>Developed sample templates for company's internal project using HTML and CSS</li>
+                            <li>Participated in the requirement gathering and prototype building process of software development</li>
+                            <li>Collaborated with senior developers to improve code quality and best practices</li>
+                        </ul>
+                        <div class="technologies">
+                            <span class="tech-tag">HTML</span>
+                            <span class="tech-tag">CSS</span>
+                            <span class="tech-tag">JavaScript</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="experience-card">
+                    <div class="card-header">
+                        <div class="company-logo">
+                            <i class="fas fa-handshake"></i>
+                        </div>
+                        <div class="experience-info">
+                            <h3>Sales and Brand Management</h3>
+                            <h4>Aglow Hospitality Services</h4>
+                            <p class="experience-date">May 2023 - June 2023</p>
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <ul>
+                            <li>Managed sales and client interaction by taking feedback via chat assistance and calls</li>
+                            <li>Improved customer satisfaction through effective communication and problem-solving</li>
+                            <li>Developed strong interpersonal skills working with diverse clientele</li>
+                        </ul>
+                        <div class="technologies">
+                            <span class="tech-tag">Customer Service</span>
+                            <span class="tech-tag">Sales</span>
+                            <span class="tech-tag">Communication</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Projects</h2>
+                <p class="section-subtitle">Things I've built</p>
+            </div>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-image">
+                        <i class="fas fa-shopping-cart"></i>
+                    </div>
+                    <div class="project-content">
+                        <h3>E-Commerce Website</h3>
+                        <p>A full-stack e-commerce application with user authentication, product catalog, shopping cart, and order management functionality.</p>
+                        <div class="project-technologies">
+                            <span class="tech-tag">HTML</span>
+                            <span class="tech-tag">CSS</span>
+                            <span class="tech-tag">JavaScript</span>
+                            <span class="tech-tag">React</span>
+                            <span class="tech-tag">MongoDB</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="project-link">
+                                <i class="fas fa-external-link-alt"></i>
+                                Live Demo
+                            </a>
+                            <a href="#" class="project-link">
+                                <i class="fab fa-github"></i>
+                                Source Code
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-image">
+                        <i class="fas fa-user"></i>
+                    </div>
+                    <div class="project-content">
+                        <h3>Portfolio Website</h3>
+                        <p>A responsive personal portfolio website showcasing my skills, projects, and experience. Deployed on Netlify with modern design principles.</p>
+                        <div class="project-technologies">
+                            <span class="tech-tag">HTML</span>
+                            <span class="tech-tag">CSS</span>
+                            <span class="tech-tag">JavaScript</span>
+                            <span class="tech-tag">Netlify</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="project-link">
+                                <i class="fas fa-external-link-alt"></i>
+                                Live Demo
+                            </a>
+                            <a href="#" class="project-link">
+                                <i class="fab fa-github"></i>
+                                Source Code
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Skills</h2>
+                <p class="section-subtitle">Technologies I work with</p>
+            </div>
+            <div class="skills-content">
+                <div class="skills-category">
+                    <h3>Hard Skills</h3>
+                    <div class="skills-grid">
+                        <div class="skill-item">
+                            <i class="fab fa-js-square"></i>
+                            <span>JavaScript</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fab fa-react"></i>
+                            <span>React</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fab fa-java"></i>
+                            <span>Java</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fab fa-python"></i>
+                            <span>Python</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-code"></i>
+                            <span>C</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-database"></i>
+                            <span>MongoDB</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-globe"></i>
+                            <span>Web Development</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-chart-bar"></i>
+                            <span>Data Analysis</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="skills-category">
+                    <h3>Soft Skills</h3>
+                    <div class="skills-grid">
+                        <div class="skill-item">
+                            <i class="fas fa-comments"></i>
+                            <span>Effective Communication</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-ear-listen"></i>
+                            <span>Active Listening</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-users"></i>
+                            <span>Teamwork</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-sync-alt"></i>
+                            <span>Adaptability</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-brain"></i>
+                            <span>Stress Management</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-headset"></i>
+                            <span>Multi-Channel Support</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Get In Touch</h2>
+                <p class="section-subtitle">Let's work together</p>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Email</h4>
+                            <p>bhuvanmadhur@gmail.com</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Phone</h4>
+                            <p>+91 7060666604</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Location</h4>
+                            <p>Mathura, India</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fab fa-linkedin"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>LinkedIn</h4>
+                            <p>linkedin.com/in/bhuvan-chaudhary-46081527b</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <form id="contact-form">
+                        <div class="form-group">
+                            <input type="text" name="name" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" name="email" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" name="subject" placeholder="Subject" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea name="message" placeholder="Your Message" rows="6" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; 2024 Bhuvan Chaudhary. All rights reserved.</p>
+                <div class="footer-social">
+                    <a href="https://linkedin.com/in/bhuvan-chaudhary-46081527b" target="_blank">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="mailto:bhuvanmadhur@gmail.com">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
